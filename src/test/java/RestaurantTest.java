@@ -28,6 +28,7 @@ class RestaurantTest {
 
     @Test
     public void is_restaurant_open_should_return_false_if_time_is_outside_opening_and_closing_time(){
+        //opening time and closing time
         restaurant.setOpeningTime(openingTime);
         restaurant.setClosingTime(closingTime);
         LocalTime acceptedTime = LocalTime.parse("09:30:00");
